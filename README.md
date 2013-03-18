@@ -10,27 +10,9 @@ Fork it and add your own evil rules. Worthy pull requests will be accepted.
 How to use it
 -------------
 
-Inject it into unsuspecting users' webpages. evil.js was intended to wreak havoc on sites hotlinking JavaScript library files, however hotlinking CSS is far less common. Some other evil ideas:
-
-* Set it as the user stylesheet in a browser (example: discouraging "customers" at retail stores from using the computers to browse Facebook and check their email).
-* Inject it into webpages or CSS files served to WiFi leachers on your open access point.
-* Exploit this week's WordPress vulnerability and add it to your friend's blog.
-* Hack an Internet backbone router and inject it into _everyone's_ webpages.
-
-A script called `evil-safari-mac.sh` is included that automates setting Safari's user stylesheet to the latest version of evil.css. Run it on any Mac using Terminal.app with this easy to remember URL:
-
-    curl -L bit.ly/evil-safari-mac | sh
-
-Uninstall it by deselecting the stylesheet in Safari's preferences, or execute this in a shell:
-
-    defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "1"
-
-Demo
-----
-
 This bookmarklet will inject the latest version of evil.js into any webpage, just copy and paste into the URL bar and hit enter:
 
-    javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="https://github.com/tlrobinson/evil.css/raw/master/evil.css";d.body.appendChild(l)})(document);
+    javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="http://maelstrom.github.com/evil.css/evil.css";d.body.appendChild(l)})(document);
 
 Credits
 -------
