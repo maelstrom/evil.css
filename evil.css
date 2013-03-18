@@ -68,9 +68,11 @@ body {
     height: 200% !important;
 }
 
-/* never allow selection! */
-* {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
+/* make highlighted text invisible */
+::-moz-selection{
+	color:rgba(0, 0, 0, 0);
+}
+
+::selection {
+	color: rgba(0, 0, 0, 0);
 }
